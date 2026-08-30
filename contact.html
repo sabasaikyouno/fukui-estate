@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>来店予約・お問い合わせ | フクイテラス不動産</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav is-scrolled" id="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="index.html">フクイテラス不動産<span>FUKUI TERRACE REALTY</span></a>
+    <nav class="nav__links">
+      <a href="index.html#rental">賃貸物件</a>
+      <a href="index.html#sale">売買物件</a>
+      <a href="index.html#cost">費用の目安</a>
+    </nav>
+    <a class="btn btn--ghost nav__cta" href="index.html">トップへ戻る</a>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Reservation / Contact</p>
+    <h1>来店予約・お問い合わせ</h1>
+  </div>
+</section>
+
+<section class="resv">
+  <div class="wrap resv__grid">
+    <div>
+      <p class="lead">物件のご相談、内見のご予約、売却査定のお申込みをこちらから承ります。担当より1営業日以内にご連絡し、日程を確定いたします。</p>
+      <form class="form" id="contactForm" style="margin-top:32px">
+        <div class="field">
+          <label for="name">お名前<span class="req">必須</span></label>
+          <input type="text" id="name" name="name" required placeholder="福井 太郎">
+        </div>
+        <div class="field field--row">
+          <div>
+            <label for="email">メールアドレス<span class="req">必須</span></label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div>
+            <label for="tel">お電話番号<span class="req">必須</span></label>
+            <input type="tel" id="tel" name="tel" required placeholder="0776-00-0000">
+          </div>
+        </div>
+        <div class="field">
+          <label for="purpose">ご用件<span class="req">必須</span></label>
+          <select id="purpose" name="purpose" required>
+            <option value="">お選びください</option>
+            <option>賃貸のご相談・内見予約</option>
+            <option>売買（購入）のご相談・内見予約</option>
+            <option>売却査定のお申込み</option>
+            <option>賃貸管理のご相談（オーナー様）</option>
+            <option>その他のお問い合わせ</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="property">物件番号・ご希望条件</label>
+          <input type="text" id="property" name="property" placeholder="例：フォレストコート照手／エリア・予算・間取りのご希望など">
+          <p class="field__hint">サイト掲載の物件番号がなくても、エリアや予算だけで構いません。</p>
+        </div>
+        <div class="field field--row">
+          <div>
+            <label for="date">ご来店・内見のご希望日</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div>
+            <label for="time">ご希望の時間</label>
+            <select id="time" name="time">
+              <option>10:00</option>
+              <option>11:00</option>
+              <option>13:00</option>
+              <option>14:00</option>
+              <option>15:00</option>
+              <option>16:00</option>
+              <option>17:00</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="pet">ペットの飼育</label>
+          <select id="pet" name="pet">
+            <option>飼育なし</option>
+            <option>小型犬・猫</option>
+            <option>中型犬以上</option>
+            <option>その他（相談したい）</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">ご質問・ご要望</label>
+          <textarea id="message" name="message" placeholder="初期費用のこと、駐車場のこと、ローンのご相談など、なんでもお書きください。"></textarea>
+          <p class="field__hint">当日までにお調べしておきます。</p>
+        </div>
+        <div class="form__actions">
+          <button type="submit" class="btn btn--primary">この内容で送信する</button>
+          <p class="form__note">送信いただいた内容は、ご予約の確認とご連絡にのみ使用します。</p>
+        </div>
+      </form>
+    </div>
+
+    <aside class="aside">
+      <h3>ご来店にあたって</h3>
+      <ul>
+        <li>ご来店用の駐車場は5台ございます。ご予約は不要です。</li>
+        <li>内見は1件30分が目安です。複数件ご希望の場合は45分〜1時間ほどお時間をいただきます。</li>
+        <li>入居審査には本人確認書類・収入証明・勤務先情報が必要です。</li>
+        <li>売却査定は無料です。机上査定は当日〜翌営業日でご案内できます。</li>
+        <li>当日の急なご相談はお電話（0776-00-0000）かチャットでお尋ねください。</li>
+        <li>ご予約後のキャンセル・日程変更は、前日までにご連絡ください。</li>
+      </ul>
+      <p class="demo-notice">これはチャットボット導入テスト用のデモサイトです。実際の不動産会社・予約受付は存在しません。送信ボタンを押しても、どこにも送信されません。</p>
+    </aside>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__bottom" style="margin-top:0;border-top:0;padding-top:0">
+      <span>&copy; フクイテラス不動産株式会社（デモサイト）</span>
+      <span class="demo-pill">Demo Site</span>
+    </div>
+  </div>
+</footer>
+
+<div class="test-banner">🔧 <b>TEST SITE</b> — これはチャットボット導入テスト用のデモサイトです。実際の不動産会社ではありません。</div>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('デモサイトのため、実際には送信されません。\n\n実際のサイトでは、この内容が不動産会社へ届きます。');
+  });
+</script>
+
+<!-- LIENS BOT チャットウィジェット -->
+<!-- ⚠️ data-bot-id は index.html と同じIDに差し替えること -->
+<script>
+  (function() {
+    var botId = 'cmtff6yhu04294201yrqvy8kr';
+    if (botId.indexOf('REPLACE_') === 0) { return; }
+    var script = document.createElement('script');
+    script.src = 'https://app.liens-web.com/widget.js?v=' + Date.now();
+    script.setAttribute('data-bot-id', botId);
+    script.setAttribute('data-api-url', 'https://app.liens-web.com');
+    script.setAttribute('data-color', '#1c3559');
+    script.setAttribute('data-position', 'bottom-right');
+    script.defer = true;
+    document.head.appendChild(script);
+  })();
+</script>
+</body>
+</html>

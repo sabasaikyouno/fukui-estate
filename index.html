@@ -405,6 +405,12 @@
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 
+<!-- 応急処置: widget.js の既定アイコンが pointer-events:none のまま復活されず、
+     マウスでクリックできない（.has-icon の img にしか auto が無い）。
+     本体 app.liens-web.com/widget.js が直ったらこのブロックは削除してよい。 -->
+<style>
+  #liens-bot-toggle:not(.has-icon) { pointer-events: auto !important; }
+</style>
 <!-- LIENS BOT チャットウィジェット -->
 <!-- 不動産デモ用のボット（管理画面での作成後にIDを差し替える） -->
 <script>
